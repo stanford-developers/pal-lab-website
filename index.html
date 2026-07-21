@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAL Lab — Physical Active Learning Laboratory at Stanford</title>
+  <meta name="description" content="The Physical Active Learning Laboratory at Stanford works on real-time robot learning on hardware." />
+  <link rel="icon" type="image/png" href="assets/images/pal_symbol.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/pal.css" />
+</head>
+<body>
+
+  <!-- ── Header ──────────────────────────────────────────── -->
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="nav">
+        <a href="#home" class="nav-logo" aria-label="PAL Lab home">
+          <img src="assets/images/pal.png" alt="PAL Lab logo" />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active" data-section="home">Home</a></li>
+          <li><a href="#people" data-section="people">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+        <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Open navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+    <div class="spectrum-bar"></div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <a href="#home">Home</a>
+    <a href="#people">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="join.html">Join</a>
+  </div>
+
+  <main>
+
+    <!-- ── Hero ────────────────────────────────────────────── -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="hero-lockup">
+          <img src="assets/images/pal_symbol.png" alt="" class="hero-symbol" aria-hidden="true" />
+          <div class="hero-sep"></div>
+          <h1>Physical<br/><em>Active Learning</em><br/>Laboratory</h1>
+        </div>
+        <div class="hero-sub">
+          <p class="hero-affiliation">
+            <a href="https://stanford.edu/" target="_blank" rel="noopener"><b>Stanford University</b></a>
+            &middot;
+            <a href="https://me.stanford.edu/" target="_blank" rel="noopener"><b>Mechanical Engineering</b></a>
+          </p>
+          <p class="hero-tagline"><strong>Starting 1/1/27:</strong> We build robot learning algorithms that work in real time, in the real world, on real hardware. We target diverse platforms, aiming to enrich how robots interact and adapt in the physical world.</p>
+          <div class="btn-row">
+            <a class="btn" href="https://x.com/StanfordPALLab" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.261 5.635 5.903-5.635zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Follow Us
+            </a>
+            <a class="btn" href="mailto:berrueta@stanford.edu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Featured Carousel ─────────────────────────────────── -->
+    <section id="featured">
+      <div class="carousel" id="carousel">
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carouselTrack">
+
+            <div class="carousel-slide active">
+              <a href="https://www.caltech.edu/about/news/caltechs-autonomous-indycar-shows-promise-at-first-us-road-course-challenge" target="_blank" rel="noopener" class="slide-link">
+                <div class="slide-media">
+                  <video src="assets/videos/racing.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </a>
+            </div>
+
+            <div class="carousel-slide">
+              <a href="https://xingxingzuo.github.io/MM-SpatialAI/" target="_blank" rel="noopener" class="slide-link">
+                <div class="slide-media">
+                  <video src="assets/videos/lidar.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </a>
+            </div>
+
+            <div class="carousel-slide">
+              <a href="https://www.nature.com/articles/s42256-024-00829-3" target="_blank" rel="noopener" class="slide-link">
+                <div class="slide-media">
+                  <video src="assets/videos/maxdiff.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </a>
+            </div>
+
+            <div class="carousel-slide">
+              <a href="https://ieeexplore.ieee.org/document/10669222" target="_blank" rel="noopener" class="slide-link">
+                <div class="slide-media">
+                  <video src="assets/videos/darpaswarm.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </a>
+            </div>
+
+            <div class="carousel-slide">
+              <a href="https://www.science.org/doi/10.1126/science.abc6182" target="_blank" rel="noopener" class="slide-link">
+                <div class="slide-media">
+                  <video src="assets/videos/smarticles.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </a>
+            </div>
+
+            <div class="carousel-slide">
+              <a href="https://news.mit.edu/2022/microparticles-oscillating-current-1013" target="_blank" rel="noopener" class="slide-link">
+                <div class="slide-media">
+                  <video src="assets/videos/syncells.mp4" autoplay muted loop playsinline></video>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="carousel-bottom">
+            <div class="carousel-caption" id="carouselCaption">
+              <div class="carousel-cap-item active">
+                <h3><a href="https://www.caltech.edu/about/news/caltechs-autonomous-indycar-shows-promise-at-first-us-road-course-challenge" target="_blank" rel="noopener">Robot learning in safety-critical systems</a></h3>
+              </div>
+              <div class="carousel-cap-item">
+                <h3><a href="https://xingxingzuo.github.io/MM-SpatialAI/" target="_blank" rel="noopener">Active perception in hardware</a></h3>
+              </div>
+              <div class="carousel-cap-item">
+                <h3><a href="https://www.nature.com/articles/s42256-024-00829-3" target="_blank" rel="noopener">Online reinforcement learning</a></h3>
+              </div>
+              <div class="carousel-cap-item">
+                <h3><a href="https://ieeexplore.ieee.org/document/10669222" target="_blank" rel="noopener">Multi-agent planning and control</a></h3>
+              </div>
+              <div class="carousel-cap-item">
+                <h3><a href="https://www.science.org/doi/10.1126/science.abc6182" target="_blank" rel="noopener">Physics-informed control of complex systems</a></h3>
+              </div>
+              <div class="carousel-cap-item">
+                <h3><a href="https://news.mit.edu/2022/microparticles-oscillating-current-1013" target="_blank" rel="noopener">Statistical mechanics of microrobotic systems</a></h3>
+              </div>
+            </div>
+
+            <div class="carousel-nav">
+              <div class="carousel-dots" id="carouselDots"></div>
+              <div class="carousel-btns">
+                <button class="carousel-ctrl" id="carouselPrev" aria-label="Previous">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd"/></svg>
+                </button>
+                <button class="carousel-ctrl" id="carouselNext" aria-label="Next">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Overview ──────────────────────────────────────────── -->
+    <section id="overview" class="text-section">
+      <div class="wrap">
+        <div class="overview-card">
+          <h2 class="section-title">Overview</h2>
+          <p>
+            Starting 1/1/27, the Physical Active Learning Laboratory will be part of the
+            <a href="https://me.stanford.edu/" target="_blank" rel="noopener">Department of Mechanical Engineering</a>
+            and the <a href="https://src.stanford.edu/" target="_blank" rel="noopener">Stanford Robotics Center</a>.
+            We build algorithms that allow robots to <b>safely learn, rapidly adapt, and actively exploit</b> their physical environment in real time. From pushing the limits of high-performance autonomous racing to navigating complex field logistics, our mission is to deploy reliable, safety-critical learning algorithms that fundamentally enrich robot-environment interaction across diverse deployments. We leverage techniques from reinforcement learning, optimal control, dynamical systems, information theory, and more to develop algorithms that are theoretically grounded and practically deployable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── News ──────────────────────────────────────────────── -->
+    <section id="news">
+      <div class="wrap">
+        <h2 class="section-title">News</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <span class="news-date">2026</span>
+            <p class="news-body">
+              <span class="news-tag">NEW</span>
+              Thomas A. Berrueta joins <strong>Stanford University</strong> on <strong>1/1/2027</strong> as an Assistant Professor of Mechanical Engineering, launching the <strong>Physical Active Learning Lab</strong>. Positions are available, see our <a href="join.html">join page</a>.
+            </p>
+          </li>
+          <li class="news-item">
+            <span class="news-date">2026</span>
+            <p class="news-body">
+              Our paper on <strong>environment-aware GNSS covariance learning for autonomous racing</strong> is accepted to <strong>ICRA 2026</strong>, and our workshop paper on <strong>online continual learning for robust LiDAR perception</strong> at racing speeds is named a <strong>Best Paper Finalist</strong>.
+            </p>
+          </li>
+          <li class="news-item">
+            <span class="news-date">2025</span>
+            <p class="news-body">
+              Prof. Berrueta is named <strong>Associate Editor of IEEE Robotics and Automation Letters (RA-L)</strong>, handling Aerial &amp; Field Robotics and Theoretical Foundations.
+            </p>
+          </li>
+          <li class="news-item">
+            <span class="news-date">2025</span>
+            <p class="news-body">
+              As technical lead of <strong>Caltech Racer</strong>, the autonomous IndyCar program makes its debut at its first U.S. road-course challenge — featured by <em>Caltech Magazine</em>.
+            </p>
+          </li>
+          <li class="news-item">
+            <span class="news-date">2025</span>
+            <p class="news-body">
+              Invited talks: &ldquo;Robot learning on the edge&rdquo; at the <strong>ELLIIT Robot Learning Symposium</strong> (Lund University, Sweden), and a robotics panel at <strong>a16z Tech Week</strong> (Los Angeles).
+            </p>
+          </li>
+          <li class="news-item">
+            <span class="news-date">2024</span>
+            <p class="news-body">
+              <strong>Maximum Diffusion Reinforcement Learning</strong> published in <em>Nature Machine Intelligence</em>, and Prof. Berrueta is named a <strong>Microsoft Future Leader in Robotics and AI</strong>. <a href="https://doi.org/10.1038/s42256-024-00829-3" target="_blank" rel="noopener">Article</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── People ─────────────────────────────────────────────── -->
+    <section id="people">
+      <div class="wrap">
+        <h2 class="section-title">People</h2>
+        <a href="https://tberrueta.github.io" target="_blank" rel="noopener" class="pi-card">
+          <div class="pi-photo-col">
+            <div class="pi-photo-wrap">
+              <img src="assets/images/ThomasBerrueta.jpg" alt="Thomas A. Berrueta" class="pi-photo" />
+            </div>
+            <p class="pi-photo-label">Group Leader</p>
+          </div>
+          <div class="pi-bio">
+            <p class="pi-name">Thomas A. Berrueta, Ph.D.</p>
+            <p class="pi-role">Incoming Assistant Professor of Mechanical Engineering (starting 1/1/2027)</p>
+            <p class="pi-text">Thomas will join Stanford University as an Assistant Professor of Mechanical Engineering on 1/1/2027 where he will lead the PAL Lab. Before joining Stanford, he was a Postdoctoral Researcher at Caltech's Computing and Mathematical Sciences Department, and prior to that he did his Ph.D. in Mechanical Engineering at Northwestern, where he was named a Presidential Fellow.</p>
+          </div>
+        </a>
+
+        <div class="people-grid">
+          <!-- Lab members added here as the group grows -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-inner">
+        <span>&copy; <span id="foot-year"></span> Thomas A. Berrueta</span>
+        <div class="foot-links">
+          <a href="https://me.stanford.edu/" target="_blank" rel="noopener">Stanford ME</a>
+          <a href="https://src.stanford.edu/" target="_blank" rel="noopener">Stanford SRC</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Mobile nav ── */
+    const btn   = document.getElementById('mobileMenuBtn');
+    const mnav  = document.getElementById('mobileNav');
+    const close = document.getElementById('mobileNavClose');
+    const openM  = () => { mnav.classList.add('open'); mnav.setAttribute('aria-hidden','false'); };
+    const shutM  = () => { mnav.classList.remove('open'); mnav.setAttribute('aria-hidden','true'); };
+    btn.addEventListener('click', openM);
+    close.addEventListener('click', shutM);
+    mnav.addEventListener('click', e => { if (e.target === mnav) shutM(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') shutM(); });
+    mnav.querySelectorAll('a').forEach(a => a.addEventListener('click', shutM));
+
+    /* ── Active nav link on scroll ── */
+    const navLinks = document.querySelectorAll('[data-section]');
+    const sections = ['home','featured','overview','news','people'].map(id => document.getElementById(id));
+    const sectionMap = { home:'home', featured:'home', overview:'home', news:'home', people:'people' };
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const key = sectionMap[entry.target.id] || entry.target.id;
+          navLinks.forEach(a => a.classList.toggle('active', a.dataset.section === key));
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    sections.forEach(s => { if (s) obs.observe(s); });
+    document.getElementById('foot-year').textContent = new Date().getFullYear();
+
+    /* ── Carousel ── */
+    (function () {
+      const track    = document.getElementById('carouselTrack');
+      const slides   = Array.from(track.children);
+      const caps     = Array.from(document.getElementById('carouselCaption').children);
+      const dotsWrap = document.getElementById('carouselDots');
+      const count    = slides.length;
+      let index = 0, timer;
+
+      slides.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        d.addEventListener('click', () => { go(i); reset(); });
+        dotsWrap.appendChild(d);
+      });
+      const dots = Array.from(dotsWrap.children);
+
+      const viewport = document.querySelector('.carousel-viewport');
+      const PEEK_GAP = 20;
+
+      function peekOffset(i) {
+        const slideW = slides[0].offsetWidth;
+        const center = (viewport.clientWidth - slideW) / 2;
+        return center - i * (slideW + PEEK_GAP);
+      }
+
+      function go(i) {
+        index = (i + count) % count;
+        track.style.transform = 'translateX(' + peekOffset(index) + 'px)';
+        slides.forEach((s, k) => s.classList.toggle('active', k === index));
+        caps.forEach((c, k)   => c.classList.toggle('active', k === index));
+        dots.forEach((d, k)   => d.classList.toggle('active', k === index));
+      }
+      function next()  { go(index + 1); }
+      function prev()  { go(index - 1); }
+      function reset() { clearInterval(timer); timer = setInterval(next, 8000); }
+
+      document.getElementById('carouselNext').addEventListener('click', () => { next(); reset(); });
+      document.getElementById('carouselPrev').addEventListener('click', () => { prev(); reset(); });
+      window.addEventListener('resize', () => {
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(' + peekOffset(index) + 'px)';
+        requestAnimationFrame(() => { track.style.transition = ''; });
+      });
+      track.style.transition = 'none';
+      go(0);
+      requestAnimationFrame(() => { track.style.transition = ''; });
+      reset();
+    })();
+  </script>
+</body>
+</html>
